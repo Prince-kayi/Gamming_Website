@@ -1,0 +1,114 @@
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "lato",sans-serif;
+}
+.products{
+  background-size: cover;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  background-position: center;
+}
+
+.homei{
+  height: 100vh;
+  width: 100%;
+  background-image: url("https://cdn.mos.cms.futurecdn.net/o2h4wsfCpYyXirdEBLCJ2n.jpg");
+  background-size: cover;
+  background-position: center;
+ 
+}
+.console-wrapper{
+  height: 100vh;
+  width: 100%;
+  background-image: url("https://www.videogameschronicle.com/files/2022/02/sds5.jpg");
+  background-size: cover;
+  background-position: center
+}
+.sign-wrapper{
+  height: 100vh;
+  width: 100%;
+  background-image: url("https://gamingbolt.com/wp-content/uploads/2022/01/Horizon-Forbidden-West-image-8.jpg");
+  background-size: cover;
+  background-position: center;
+}
+.sale-wrapper{
+  height: 100vh;
+  width: 100%;
+  background-image: url("https://static.tweaktown.com/news/8/6/86325_2_norman-reedus-on-death-stranding-2-we-just-started-the-second-one_full.jpg");
+  background-size: cover;
+  background-position: center;
+  
+}
+.help-wrapper{
+  height: 100vh;
+  width: 100%;
+  background-image: url("https://static1.colliderimages.com/wordpress/wp-content/uploads/2021/06/THE-LAST-OF-US-3-THEORIES.jpg");
+  background-size: cover;
+  background-position: center;
+}
+.acc-wrapper{
+  height: 100vh;
+  width: 100%;
+  background-image: url("https://www.notebookcheck.net/fileadmin/Notebooks/Sonstiges/Games/FallenOrder/fallen_order__15_.jpg");
+  background-size: cover;
+  background-position: center;
+}
+.register-wrapper{
+  height: 100vh;
+  width: 100%;
+  background-image: url("https://blog.playstation.com/tachyon/2022/11/eb63f6d9574865012d29bd03de09e351e0fd93f3.jpg?resize=1088%2C612&crop_strategy=smart");
+  background-size: cover;
+  background-position: center;
+}
+.product{
+  height: 100vh;
+  width: 100%;
+  background-image: url("https://cdn.mos.cms.futurecdn.net/SeK9rNdzzhgUCeHV8UN5Tk.jpg");
+  background-size: cover;
+   background-position: center; 
+}
+.home,.products,.reports,.console,sign{
+  color:white;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 500px;
+
+}
+h5 {
+  color: bisque;
+  background-color: blue;
+  border-radius: 18px;
+  padding: 10px 10px;
+  margin-right: 6px;
+  margin-top: -15px;
+}
+
+.hearts {
+  margin: 30px auto;
+  width: 50%;
+  background-color: palevioletred;
+  border: 1px solid black;
+  height: 50vh;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+.hearts h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: whitesmoke;
+  margin: 30px;
+  text-transform: uppercase;
+}
+.shopping{
+  height: 100vh;
+  width: 100%;
+  background-image: url("https://pargo.co.za/wp-content/uploads/2019/05/Abandoned-shopping-cart.png");
+  background-size: cover;
+   background-position: center; 
+}

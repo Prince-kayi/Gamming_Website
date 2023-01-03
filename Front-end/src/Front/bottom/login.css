@@ -1,0 +1,137 @@
+.login-class {
+    position: relative;
+    background-color: coral;
+    width: 570px;
+    height: 500px;
+    display: flex;
+    top: 50px;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    white-space: nowrap;
+    border-radius: 20px;
+}
+.login-container {
+    display: flex;
+}
+.login-form {
+    margin: 25px;
+}
+.login-form input {
+    height: 40px;
+    width: 500px;
+    margin: 25px;
+    border-radius: 20px;
+}
+.login-form label {
+    width: 230px;
+    text-align: right;
+    margin-left: 25px;
+}
+.login-submit-botton {
+    margin-bottom: 40px;
+    margin-left: 20px;
+}
+.login-submit-botton p {
+    text-align: center;
+}
+.submit{
+    margin-top: 20px;
+    margin-left: 20px;
+    height: 45px;
+    font-size: 1rem;
+    border: 2px solid blue;
+    width: 450px;
+    font-family: inherit;
+    font-weight: bold;
+    background: transparent;
+    color: blue;
+    transition: background 200ms ease-in, color 200ms ease-in;
+    cursor: pointer;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    transition: 0.5s;
+}
+.submit:hover {
+    color: whitesmoke;
+    background-color: blue;
+    transform: scale(1.08);
+
+}
+.login-submit-botton a {
+    text-decoration: none;
+    color: blue;
+}
+.login-submit-botton a:hover {
+    text-decoration: underline;
+}
+.inn {
+    margin-bottom: 35px;
+    margin-left: 30px;
+}
+.fogot {
+    position: relative;
+    margin-left: 300px;
+    cursor: pointer;
+    text-decoration: none;
+    color: blue;
+}
+.error-msg {
+    font-size: 15px;
+    color: red;
+    margin-left: 30px;
+    margin-top: -20px;
+}
+.finally {
+    width: 100%;
+    background-color: aqua;
+    color: white;
+    font-weight: 800;
+    padding: 25px;
+    margin-top: 35px;
+    width: 550px;
+    border-radius: 20px;
+}
+.title{
+    margin-bottom: 35px;
+   margin-left: 160px;
+  }
+  .logged-in {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-image: url("https://i.pinimg.com/originals/56/42/00/5642006e5af0932004c76acec16d5050.jpg");
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    margin-left: 0px;
+  }
+  .logged-in h1 {
+    color: whitesmoke;
+    font-size: 2rem;
+    margin-bottom: 40px;
+  }
+  .logged-in a {
+    color: whitesmoke;
+    text-decoration: none;
+    font-size: 30px;
+    font-weight: 800;
+  }
+  .logged-in a:hover {
+    cursor: pointer;
+    text-decoration: underline;
+  }
+  .outer {
+    margin-top: -50px;
+    height: 100vh;
+    width: 100%;
+    background-image: url("https://atomhawk.com/wp-content/uploads/2022/05/Mortal-Kombat-11-tile-image.jpg");
+    background-size: cover;
+    background-position: center;
+  }

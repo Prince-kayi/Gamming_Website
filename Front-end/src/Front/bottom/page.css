@@ -7,7 +7,7 @@
     justify-content: center;
     align-items: center;
     border: 1px solid black;
-    top: 10px;
+    top: 100px;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 20px;
@@ -45,7 +45,7 @@
   .submit-button p {
     text-align: center;
   }
-  .submit {
+  .submits {
     margin-left: 20px;
     height: 45px;
     font-size: 1rem;
@@ -60,15 +60,15 @@
     border-radius: 20px;
     margin-bottom: 20px;
   }
-  .submit:hover {
+  .submits:hover {
     color: whitesmoke;
     background-color: blue;
   }
-  .submit-button a {
+  .submits-button a {
     text-decoration: none;
     color: blue;
   }
-  .submit-button a:hover {
+  .submits-button a:hover {
     text-decoration: underline;
   }
   .title{
@@ -82,9 +82,36 @@
     height: 100px;
   }
   .contact-outer {
-    height: 110vh;
+    height: 125vh;
     width: 100%;
     background-image: url("https://media.wired.com/photos/609c5732c7e4572778802fa7/master/pass/games_re8_review.jpg");
     background-size: cover;
     background-position: center;
   }
+  @media screen and (max-width:820px){
+    .input-group{
+      width: 420px;
+      height: 620px;
+      top:100px;
+    }
+    .input-form-group input {
+      height: 25px;
+      width: 380px;
+      margin: 25px;
+      margin-left: 15px;
+  }
+  .input-form-group label {
+    width: 230px;
+    margin-left: 15px;
+  }
+  .submits{
+    width: 370px;
+    margin-left: 5px;
+  }
+  .texa{
+    width: 390px;
+    margin-left: 20px;
+    height: 100px;
+  }
+  }
+  

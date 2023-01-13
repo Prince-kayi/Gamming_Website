@@ -1,6 +1,6 @@
 .footers{
     background-color: rgb(4, 4, 10) ;
-     height: 50vh;
+     height: 40vh;
      width: 100%;
      display: flex;
      justify-content: center;
@@ -53,4 +53,10 @@
         font-size: 14px;
     
     }
+    @media screen and (max-width:820px){
+        footer p{
+            font-size: 12px;
+         }
+    }
+    
     

@@ -9,7 +9,7 @@ import Product from './Pages/Product'
 import Register from './Pages/Register'
 import Sale from './Pages/Sale'
 import Sign_In from './Pages/Sign_In'
-import Wish from './Pages/Wish'
+import Games from './Pages/Games'
 const Routing = () => {
   return (
 
@@ -23,7 +23,7 @@ const Routing = () => {
         <Route path="/help" element={<Help/>} />
         <Route path="/acc" element={<Account/>} />
         <Route path="/regi" element={<Register/>} />
-        <Route path="/wish" element={<Wish/>} />
+        <Route path="/games" element={<Games/>} />
         <Route path="/cart" element={<Cart/>} />
         
         

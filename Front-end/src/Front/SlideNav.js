@@ -4,13 +4,13 @@ import {Link} from 'react-router-dom'
 import {FaBars,FaHome,FaTimes, FaUser,FaShoppingCart,FaHeart} from "react-icons/fa"
  const data=[
     {
-        title:'Home',
-        path:'/',
+        title:'Games',
+        path:'/games',
         icon:<FaHome/>,
         cName:'nav-text'
     },
     {
-        title:'Products',
+        title:'My Account',
         path:'/product',
         icon:<FaHome/>,
         cName:'nav-text'
@@ -22,7 +22,7 @@ import {FaBars,FaHome,FaTimes, FaUser,FaShoppingCart,FaHeart} from "react-icons/
         cName:'nav-text'
     },
     {
-        title:'My Account',
+        title:'Product',
         path:'/acc',
         icon:<FaHome/>,
         cName:'nav-text'
@@ -68,7 +68,7 @@ return(
                 </ul>
                 <ul>
                     <li>
-                        <Link to="/product">Products</Link>
+                        <Link to="/service">Services</Link>
                     </li>
                 </ul>
                 <ul>
@@ -83,7 +83,7 @@ return(
                 </ul>
                 <ul>
                     <li>
-                        <Link to="/acc">My Account</Link>
+                        <Link to="/hard">Hardware</Link>
                     </li>
                 </ul>
                 <ul>
@@ -112,7 +112,7 @@ return(
     <br/>
     <br/>
     <div className="bottons">
-     <button className="button"><FaUser/>&nbsp;Login </button>
+     <Link to="/login"><button className="button"><FaUser/>&nbsp;Login </button></Link>
    <Link to="/regi"><button className="button"> Register</button></Link> 
                  </div>
 

@@ -1,13 +1,12 @@
 import React, { useState } from "react";
 import "../bottom/page.css"
-//import axios from "axios"
+import axios from "axios"
 const Register = () => {
    const [contForm, setLForm] = useState({
     firstName:" ",
     lastName:" ",
     email: " ",
     password: " ",
-    Mnumber:" ",
     description:" ",
    })
    const [error,setErrors]=useState({
@@ -15,7 +14,6 @@ const Register = () => {
     lastName:" ",
     email: " ",
     password: " ",
-    Mnumber:" ",
     description:" ",
    })
    const[successMsg,setMsg]=useState("");
@@ -26,53 +24,32 @@ const Register = () => {
    }
    const Submit = (e) => {
       e.preventDefault();
-      if(contForm.firstName===" " || contForm.password===""|| contForm.lastName===""|| contForm.Mnumber==""||contForm.description==""){
-
-         setErrors((contForm)=>({
-         ...contForm,
-         firstName:"Please enter your first name",
-         lastName:"Please enter your last name",
-         email:"Please enter your email address",
-         password:"Please enter  your password",
-         Mnumber:"Please enter your phone number",
-         description:"please tell us about yourself"
-         }));
-        }else{
-          
-         setErrors((contForm)=>({
-          ...contForm,
-          firstName:" ",
-          lastName:" ",
-          email:" ",
-          password:" ",
-          Mnumber:" ",
-          description:" "
-          }));
-      }
+     
     }
    const ShowOutcome = () => {
       console.log("contactForm", contForm)
-      //const contacted={
-        // email:contForm.email,
-       // name:contForm.name,
-       // subject:contForm.subject,
-       // description:contForm.description,
-       // }
-        //axios.post(" http://localhost:1500/app/contact",contacted)
-         // .then(res=>console.log(res.data))
-         // setLForm({
-       // email: " ",
-        //name: " ",
-        //subject: " ",
-       // description:" ",
-          //})
+      const contacted={
+       firstName:contForm.firstName,
+       lastName:contForm.lastName,
+       email:contForm.email,
+       password:contForm.password,
+        description:contForm.description,
+       }
+        axios.post(" http://localhost:1000/appi/regi",contacted)
+        .then(res=>console.log(res.data))
+         setLForm({
+            firstName:" ",
+            lastName:" ",
+            email: " ",
+            password: " ",
+            description:" ",
+          })
    }
    return (
       <div className="contact-outer">
       <div className="input-group">
          <div className="contact-inputs">
             <form className="input-form-group" onSubmit={Submit}>
-            {successMsg &&<div className='finally'>{successMsg}</div>}
                <h1 className="title"> Sign Up</h1>
                <label>FirstName: </label>
                   <div >
@@ -91,7 +68,7 @@ const Register = () => {
                </div>
                <label> Password: </label>
               <div>  
-                  <input type="text" name="password" onChange={Changer} value={contForm.password}  className="ad" placeholder=" Enter Subject"/>
+                  <input type="password" name="password" onChange={Changer} value={contForm.password}  className="ad" placeholder=" Enter password"/>
                   {!!error.password &&<div className="error-msg">{error.password}</div>}
                </div>
                <div>  
@@ -106,7 +83,7 @@ const Register = () => {
                                <br/>
                                <br/>
                <div className="submit-button">
-                  <button className="submit" onClick={ShowOutcome}>Send</button>
+                  <button className="submits" onClick={ShowOutcome}>Send</button>
                </div>
             </form>
          </div>

@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom"
-//import axios from "axios"
+import axios from "axios"
 import "../bottom/login.css"
 const Sign_In = () => {
    const [Loginform, setLForm] = useState({
@@ -19,53 +19,20 @@ const Sign_In = () => {
    }
    const Submit = (e) => {
       e.preventDefault();
-      if(Loginform.username===" " || Loginform.password===""){
-         setErrors((LoginForm)=>({
-         ...LoginForm,
-         username:"Please enter your email address",
-         password:"Please enter  your password"
-         }));
-         return; 
-        }
-        if(!Loginform.username.includes("@")){
-         setErrors((LoginForm)=>({
-         ...LoginForm,
-         username:"Invalid email"
-         }));
-         return; 
-        }
-        else{
-         setErrors((LoginForm)=>({
-            ...LoginForm,
-            username:" "
-            }));   
-        if(!Loginform.password.includes("@")){
-         setErrors((LoginForm)=>({
-         ...LoginForm,
-         password:"password does not match"
-         }));  
-        }
-        else{
-         setErrors((LoginForm)=>({
-            ...LoginForm,
-            password:" "
-            }));
- return setMsg("you have successfully logged in"); 
-         }
-      }
+      
    }
    const getOutcome = () => {
       console.log("LoginForm", Loginform)
-     // const signed=({
-     // username:Loginform.username,
-    //  password:Loginform.password
-     // })
-      //axios.post(" http://localhost:1500/app/sign-in",signed)
-      //.then(res=>(res.data))
-      //setLForm({
-       //  username: " ",
-       // password: " "
-    //  })
+     const signed=({
+      username:Loginform.username,
+    password:Loginform.password
+      })
+      axios.post(" http://localhost:1000/appi/login",signed)
+      .then(res=>(res.data))
+      setLForm({
+        username: " ",
+       password: " "
+     })
    }
    return (
       <>
@@ -87,7 +54,6 @@ const Sign_In = () => {
       <div className="login-class">
          <div className="login-container">
             <form className="login-form" onSubmit={Submit}>
-            {successMsg &&<div className='finally'>{successMsg}</div>}
                <h1 className="title"> Login</h1>
                <label>Username: </label>
                   <div>
